@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface Product {
@@ -114,7 +115,7 @@ const SearchBar = () => {
                   onClick={() => handleProductClick(product.id)}
                 >
                   <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
                       className="w-[80px] h-[80px] object-contain mr-4"

@@ -17,7 +17,7 @@ const LoginForm = () => {
   const [data, setData] = useState(initialData);
   const [errors, setErrors] = useState(initialData);
   const [touched, setTouched] = useState({ email: false, password: false });
-  const [session, setSession]=useState(null);
+
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

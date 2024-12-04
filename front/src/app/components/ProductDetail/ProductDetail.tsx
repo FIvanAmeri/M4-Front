@@ -4,6 +4,7 @@ import { AuthContext } from "@/app/contexts/authContext";
 import { CartContext } from "@/app/contexts/cartContext";
 import { useFavorites } from "@/app/contexts/favoriteContext";  
 import { Product } from "@/app/interfaces";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useContext } from "react";
 import swal from "sweetalert";
@@ -47,7 +48,7 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
 
   return (
     <article className="relative flex items-start space-x-8 p-4 border border-gray-200 rounded-md mt-4">
-      <img
+      <Image
         className="w-1/3 max-w-xs h-48 object-contain transition-transform duration-300 ease-in-out hover:scale-105"
         src={image}
         alt={name}

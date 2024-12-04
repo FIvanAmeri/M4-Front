@@ -3,6 +3,7 @@
 import { AuthContext } from "@/app/contexts/authContext";
 import Link from "next/link";
 import { useContext } from "react";
+import Image from "next/image";
 
 const UserWidget = () => {
     const manImageUrl = 'https://images.vexels.com/content/220668/preview/yellow-rubber-duck-illustration-rubber-duck-1ee348.png';
@@ -17,7 +18,7 @@ const UserWidget = () => {
                         <span>
                             {user.user.name}
                         </span>
-                        <img
+                        <Image
                             src={manImageUrl}
                             alt="Hombrecito"
                             width={40}

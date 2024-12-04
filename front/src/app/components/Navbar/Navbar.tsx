@@ -49,7 +49,7 @@ const Navbar = () => {
             className="mr-2"
           />
           <Link href="/" className="flex items-center">
-            <img
+            <Image
               src={homeImageUrl}
               alt="Home Icon"
               width={40}

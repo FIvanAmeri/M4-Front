@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import { createContext, useContext, ReactNode, useEffect } from "react";
 import { Product } from "@/app/interfaces";
 import { AuthContext } from "@/app/contexts/authContext";
 

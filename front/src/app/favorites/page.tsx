@@ -40,8 +40,8 @@ const FavoritesPage = () => {
             <Card
               key={product.id}
               {...product}
-              isFavorite={true}
-              onToggleFavorite={toggleFavorite}
+         
+       
             />
           ))}
         </div>
